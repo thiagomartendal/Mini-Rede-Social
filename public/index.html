@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>
+      Rede Social
+    </title>
+    <meta charset="utf-8" />
+    <link href="img/favicon.png" type="image/png" rel="shortcut icon" />
+    <link href="css/1500/index.css" type="text/css" rel="stylesheet" />
+    <script src="js/script_index.js" type="text/javascript">
+    </script>
+  </head>
+  <body>
+    <section>
+      <img id="banner" src="img/banner.png" alt="Rede Social" />
+      <div id="login">
+        <form method="post" action="/login">
+          <div id="painel_formulario_login">
+            <div>
+              <div class="borda_campo_texto">
+                <input type="email" name="email_login" class="campo_texto" placeholder="Seu email de login" required />
+              </div>
+            </div>
+            <div class="imagem">
+              <div class="borda_campo_texto">
+                <input type="password" name="senha_login" class="campo_texto" placeholder="Sua senha" required />
+              </div>
+              <img src="img/olho1.png" width="16" height="16" name="olho1" onclick="botaoOlho('olho1', 'senha_login')" id="olho1" />
+            </div>
+          </div>
+          <input type="submit" class="btn" value="Entrar" />
+          <input type="button" class="btn" value="Nova Conta" onclick="novaConta()" />
+        </form>
+      </div>
+      <div id="nova_conta">
+        <div id="conteudo_nova_conta">
+          <form method="post" onsubmit="event.preventDefault(); cadastrarConta()">
+            <div id="painel_formulario_nova_conta">
+              <div>
+                <div class="borda_campo_texto">
+                  <input type="text" name="nome_nova_conta" class="campo_texto" placeholder="Seu nome" required />
+                </div>
+              </div>
+              <div>
+                <div class="borda_campo_texto">
+                  <input type="email" name="email_nova_conta" class="campo_texto" placeholder="Um email para a conta" required />
+                </div>
+              </div>
+              <div class="imagem">
+                <div class="borda_campo_texto">
+                  <input type="password" name="senha_nova_conta" class="campo_texto" placeholder="Uma senha" onkeyup="analizarSenhas()" required />
+                </div>
+                <img src="img/olho1.png" width="16" height="16" name="olho1" onclick="botaoOlho('olho2', 'senha_nova_conta')" id="olho2" />
+              </div>
+              <div class="imagem">
+                <div class="borda_campo_texto">
+                  <input type="password" name="senha_nova_conta_rep" class="campo_texto" placeholder="Repita a senha" onkeyup="analizarSenhas()" required />
+                </div>
+                <img src="img/olho1.png" width="16" height="16" name="olho3" onclick="botaoOlho('olho3', 'senha_nova_conta_rep')" id="olho3" />
+              </div>
+            </div>
+            <div id="msg_nova_conta">
+            </div>
+            <input type="submit" class="btn" value="Concluir" />
+            <input type="reset" class="btn" value="Cancelar" onclick="cancelarNovaConta()" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  /* background-color: #ccc; */
+}
+
+section #banner {
+  display: flex;
+  margin: 0px auto;
+  padding: 15px;
+}
+
+section #login {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ubuntu;
+  height: 270px;
+}
+
+section #login .btn {
+  border: 1px solid #243e62;
+  background-color: #243e62;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+
+section #login .btn:hover {
+  border: 1px solid #243e62;
+  background-color: #fff;
+  color: #243e62;
+}
+
+section #login input[name="email_login"] {
+  width: 300px;
+}
+
+section #login input[name="senha_login"] {
+  width: 280px;
+  margin-right: 20px;
+}
+
+section #login .borda_campo_texto {
+  border: 1px solid #243e62;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+}
+
+section #login .borda_campo_texto:focus-within {
+  outline: auto;
+}
+
+section #login .campo_texto {
+  border: none;
+  outline: unset;
+}
+
+section #login #painel_formulario_login {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: 50px;
+}
+
+section #login #painel_formulario_login .imagem {
+  position: relative;
+}
+
+section #login #painel_formulario_login img {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: pointer;
+}
+
+section #nova_conta {
+  background-color: #243e62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  height: 0px;
+  visibility: hidden;
+  font-family: ubuntu;
+}
+
+section #nova_conta input[name="email_nova_conta"], section #nova_conta input[name="nome_nova_conta"] {
+  width: 300px;
+}
+
+section #nova_conta input[name="senha_nova_conta"], section #nova_conta input[name="senha_nova_conta_rep"] {
+  width: 280px;
+  margin-right: 20px;
+}
+
+section #nova_conta .borda_campo_texto {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px;
+  width: 300px;
+}
+
+section #nova_conta .borda_campo_texto:focus-within {
+  outline: auto;
+}
+
+section #nova_conta .campo_texto {
+  border: none;
+  outline: unset;
+}
+
+section #nova_conta .btn {
+  border: 1px solid #243e62;
+  background-color: #fff;
+  color: #243e62;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+
+section #nova_conta .btn:hover {
+  border: 1px solid #fff;
+  background-color: #243e62;
+  color: #fff;
+}
+
+section #nova_conta #painel_formulario_nova_conta {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: 50px;
+}
+
+section #nova_conta #painel_formulario_nova_conta .imagem {
+  position: relative;
+}
+
+section #nova_conta #painel_formulario_nova_conta img {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: pointer;
+}
+
+section #nova_conta #conteudo_nova_conta {
+  visibility: hidden;
+}
+
+section #nova_conta #conteudo_nova_conta #msg_nova_conta {
+  padding-bottom: 15px;
+}
